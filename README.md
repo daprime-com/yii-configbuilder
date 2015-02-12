@@ -3,6 +3,20 @@
 Config builder class proposes a special configuration files structure to make it easier to configure Your Yii2 application for different environments.
 
 ## Installation
+Install extension with composer.
+- add repository to list of repositories (composer.json)
+```
+ "repositories": [
+	    {
+    		"type": "vcs",
+    		"url": "https://github.com/daprime-com/yii-configbuilder"
+	    }
+]
+```
+- add configbuilder to require section
+```
+"daprime-com/yii-configbuilder": "0.*"
+```
 
 ## Usage
 Prepare config folder files structure to look like this:
@@ -33,9 +47,8 @@ $config = require(__DIR__ . '/../config/web.php');
 (new yii\web\Application($config))->run();
 
 // After
-require($rootPath . '/config/ConfigBuilder.php');
 Yii::setAlias('@root', $rootPath); //root alias is required for builder to work
 
-$configBuilder = new \app\config\ConfigBuilder();
+$configBuilder = new \yii\configbuilder\ConfigBuilder();
 (new yii\web\Application($configBuilder->getWebConfig()))->run();
 ```
