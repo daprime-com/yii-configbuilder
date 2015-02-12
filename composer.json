@@ -1,0 +1,23 @@
+{
+    "name": "daprime-com/yii-configbuilder",
+    "description": "Configuration builder extension for applications based on Yii2",
+    "keywords": ["yii2", "daprime"],
+    "type": "yii2-extension",
+    "license": "BSD-3-Clause",
+    "authors": [
+    	{
+            "name": "Dmitri Klimenko",
+            "email": "dmitri@daprime.com"
+        },
+        {
+            "name": "Igor Murujev",
+            "email": "imurujev@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": { "yii\\configbuilder\\": ""}
+    }
+}
