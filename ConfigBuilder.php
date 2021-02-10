@@ -3,7 +3,7 @@
 namespace yii\configbuilder;
 
 use Yii;
-use \yii\base\Object;
+use \yii\base\BaseObject;
 use \yii\helpers\ArrayHelper;
 
 /**
@@ -14,7 +14,7 @@ use \yii\helpers\ArrayHelper;
  * @see app\config file structure
  * @author Dmitri Klimenko <dmitri@daprime.com>
  */
-class ConfigBuilder extends Object
+class ConfigBuilder extends BaseObject
 {
 	/**
 	 * Path alias to config folder
